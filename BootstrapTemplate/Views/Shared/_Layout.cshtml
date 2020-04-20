@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <title>@ViewData["Title"] - BootstrapTemplate</title>
+    @* Links to stylesheets *@
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/admin-lte/css/AdminLTE.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/admin-lte/css/skins/_all-skins.css" />
+    <link href="~/fontawesome/4.7.0/Content/Content/font-awesome.css" rel="stylesheet" />
+    @*Link to jquery*@
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+        <header class="main-header">
+            @*<a class="logo">
+                <span><img class="logo" src="~/Images/DT-Logo.png" /></span>
+            </a>*@
+            @*navbar*@
+            <nav class="navbar navbar-static-top navbar-expand-md navbar-dark border-bottom">
+                <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">@*<span class="sr-only">Toggle navigation</span>*@</a>
+               
+                <div class="container navbar-main" id="navbar-main">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Recon Hub
+                    </a>
+                   
+                    <div class="navbar-collapse collapse  flex-sm-row-reverse">
+                        @*<partial name="_LoginPartial" />*@
+                        <ul class="navbar-nav flex-grow-1 ">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Albaraka Bank</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="absa">Any other bank</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="nav navbar-custom-menu">
+                        <a><i class="fa fa-gears"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <aside class="main-sidebar">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar user panel (optional) -->
+                <
+                <!-- /.search form -->
+                <!-- Sidebar Menu -->
+               @Html.Partial("_MainMenu")
+                <!-- /.sidebar-menu -->
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+
+
+
+        <div>
+            <main role="main" class="content-wrapper">
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer class="main-footer">
+            <strong>Copyright © 2020 <a href="https://youtube.com">Youtbue</a>.</strong> All rights reserved.
+        </footer>
+       
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/admin-lte/js/adminlte.js"></script>
+        <script src="~/admin-lte/js/pages/dashboard2.js"></script>
+        <script src="~/admin-lte/js/demo.js"></script>
+
+        <script src="~/js/site.js" asp-append-version="true"></script>
+        @RenderSection("Scripts", required: false)
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+﻿
+    <div class="control-sidebar tab-pane active control-sidebar-dark" id="control-sidebar-home-tab">
+        <h4 class="control-sidebar-heading">
+            Configuration
+        </h4>
+        <div class="form-group pad">
+              <label class="control-sidebar-subheading">Client management</label>
+               <p class="pad"><a href=@Url.Action("Create","Client")><i class="fa fa-plus-circle"></i> <span>Add a client</span></a></p>
+                <p class="pad"><a href=@Url.Action("Index","Client")><i class="fa fa-user-circle"></i> <span>Manage clients</span></a></p>
+
+        </div>
+
+        <div class="form-group">
+            <ul class="list-group">
+                <li class="list-group-item"><label class="control-sidebar-subheading">User management</label> </li>
+                <li class="list-group-item"><a href=@Url.Action("Add","User")><i class="fa fa-plus-circle"></i> <span>Create User</span></a>  </li>
+                <li class="list-group-item"><a href=@Url.Action("List","User")><i class="fa fa-user-circle"></i> <span>Manage Users</span></a> </li>
+            </ul>
+        </div>
+    </div>
+    @*<ul class="sidebar ">
+        <li>
+            <div class="tab-pane active">
+                <h3 class="control-sidebar-heading">Configuration</h3>
+
+                <ul>
+                    <li class="treeview">
+                        <a href="#">
+                            <span>  Clients</span><span > <i class="fa fa-angle-left pull-right"></i></span>
+                        </a>
+                        <ul class="treeview-menu text-nowrap">
+                            <li><a href="#"><i class="fa fa-circle-o"></i> <span>Add a Client</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </li>
+
+        <li class="treeview">
+
+            <a>
+                <i class="fa fa-dollar "></i><span>Recon Management</span>
+                <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                </span>
+            </a>
+            <ul class="treeview-menu">
+                <li><a href="#"><i class="fa fa-book"></i> <span>Prepared recons</span></a></li>
+
+            </ul>
+        </li>
+    </ul>
+
+
+
+<li><a href="href=@Url.Action("Add","Client")"><i class="fa fa-circle-o"></i> <span>Manage Clients</span></a></li>*@

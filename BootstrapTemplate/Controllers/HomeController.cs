@@ -19,6 +19,12 @@ namespace BootstrapTemplate.Controllers
             _logger = logger;
         }
 
+        //Landing page for every bank
+
+        public IActionResult Albaraka()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();
@@ -34,5 +40,7 @@ namespace BootstrapTemplate.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        //public void 
     }
 }

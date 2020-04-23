@@ -4,9 +4,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using BootstrapTemplate.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BootstrapTemplate.Controllers
 {
+    [AllowAnonymous]
     public class ClientController : Controller
     {
         //add a new client to the system

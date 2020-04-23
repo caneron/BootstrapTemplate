@@ -7,18 +7,11 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace BootstrapTemplate.Controllers
 {
-    // diffrent Idea of navigation
     [AllowAnonymous]
-    public class AlbarakaController : Controller
+    public class BetaController : Controller
     {
         public IActionResult Index()
         {
-            return View();
-        }
-
-        public IActionResult Recon()
-        {
-
             return View();
         }
     }

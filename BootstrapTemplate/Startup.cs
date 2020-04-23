@@ -31,17 +31,18 @@ namespace BootstrapTemplate
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddDbContext<ApplicationDbContext>(options =>
-            //    options.UseSqlServer(
-            //        Configuration.GetConnectionString("DefaultConnection")));
-            // services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-            //      .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddDbContext<ApplicationDbContext>(options =>
+                options.UseSqlServer(
+                    Configuration.GetConnectionString("DefaultConnection")));
             services.AddAuthentication(AzureADDefaults.AuthenticationScheme)
-                 .AddAzureAD(options => Configuration.Bind("AzureAd", options));
+                .AddAzureAD(options => Configuration.Bind("AzureAd", options));
 
             services.AddRazorPages().AddMvcOptions(options =>
             {
-               
+                var policy = new AuthorizationPolicyBuilder()
+                    .RequireAuthenticatedUser()
+                    .Build();
+                options.Filters.Add(new AuthorizeFilter(policy));
             });
             services.AddControllersWithViews();
             services.AddRazorPages();

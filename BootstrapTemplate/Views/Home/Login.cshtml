@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h3>Login</h3>
+
+<div class="container col-8 justify-content-md-center">
+    <table>
+        <thead>
+            <tr>
+                <td width="50%">Login as Directtransact member</td>
+                <td width="50%">Login from external source</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><button type="button" asp-area="AzureAD" asp-controller="Account" asp-action="SignIn" >Internal login</button></td>
+                <td><button type="button">external login</button></td>
+            </tr>
+        </tbody>
+
+
+    </table>
+</div>
+
+

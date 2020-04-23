@@ -1,72 +1,140 @@
-﻿
+﻿@page
 @{
-    ViewData["Title"] = "Albaraka";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-    <section class="content">
-        <div class="row">
-            <div class="container-fluid  pad float-left col-4">
-                <label>Click here to show the auto-generated reports</label>
-                <button type="submit" class="btn btn-primary">Prepared recons</button>
-            </div>
-
-
-            <div class="container-fluid float-right pad col-4 ">
-                <label>Click here to show the auto-generated reports</label>
-                <button type="submit" class="btn btn-primary">Prepared recons</button>
-            </div>
-
-            <hr class="col-12" />
-            <hr class="col-12" />
-
-            <div class="container float-left col-6">
-                <h2>Available recons</h2>
-
-                <div class="container-fluid ">
-                    <ul >
-                        <li><a href="#">Interbank ATM</a></li>
-                        <li><a href="#">Real Time Clearing</a></li>
-                        <li><a href="#">VISA</a></li>
-                        <li><a href="#">Inbound EFT</a></li>
-                        <li><a href="#">Inter Branch</a></li>
-                        <li><a href="#">Outbound EFT</a></li>
-                        <li><a href="#">ATM Cash Management Cash in Transit</a></li>
-                        <li><a href="#">ATM Cash Management Branch Cashed</a></li>
-                        <li><a href="#">Product Balances / Account Balances</a></li>
-                        <li><a href="#">Code Line Clearing</a></li>
-                        <li><a href="#">National Settlement </a></li>
-                        <li><a href="#">ATM On Us </a></li>
-                        <li><a href="#">Inter Account Transfer</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="container float-right col-6">
-                <h3>Available queries for that type</h3>
-                <h4>Interbank ATM</h4>
-                <ul>
-                    <li><a href="#"><i class=""></i> <span>Query</span></a></li>
-                    <li><a href="#"><i class=""></i> <span>Properties</span></a></li>
-                    <li><a href="#"><i class=""></i> <span>Recon</span></a></li>
-                    <li><a href="#"><i class=""></i> <span>Balancing</span></a></li>
-                    <li><a href="#"><i class=""></i> <span>Markoff</span></a></li>
-                    <li><a href="#"><i class=""></i> <span>Journals</span></a></li>
-                    <li><a href="#"><i class=""></i> <span>Postilion 808 Groupsum</span></a></li>
-                    <li><a href="#"><i class=""></i> <span>Enterprise ATD Groupsum</span></a></li>
-                    <li><a href="#"><i class=""></i> <span>Bankserv SQS</span></a></li>
-                    <li><a href="#"><i class=""></i> <span>Bankserv 11105</span></a></li>
-                    <li><a href="#"><i class=""></i> <span>Bankserv Late Compl</span></a></li>
-                    <li><a href="#"><i class=""></i> <span>Bankserv 11105 Split</span></a></li>
-                    <li><a href="#"><i class=""></i> <span>Bankserv 11105 Summary</span></a></li>
-                    <li><a href="#"><i class=""></i> <span>Bankserv 11105 Groupsum</span></a></li>
-                    <li><a href="#"><i class=""></i> <span>Pastel statement</span></a></li>
-                    <li><a href="#"><i class=""></i> <span>Documentation</span></a></li>
-                    <li><a href="#"><i class=""></i> <span>SARB AC001</span></a></li>
-                    <li><a href="#"><i class=""></i> <span>Reports</span></a></li>
-                </ul>
-            </div>
-        </div>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>AdminLTE 2 | Invoice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body>
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Albaraka Bank
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Albaraka Bank</a></li>
+            <li class="active">Main</li>
+        </ol>
     </section>
 
+    <!-- Main content -->
+    <section class="ClientMain">
+        <div class="ClientMainContent">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h6 style="color:#000000;" class="card-title">Recons for the past week (2020-04-13 to 2020-04-20)</h6>
+                        </div>
+                        <!-- /.card-header -->
+                        <div class="card-body table-responsive p-0">
+                            <table class="table table-hover text-nowrap">
+                                <thead>
+                                    <tr>
+                                        <th>Status</th>
+                                        <th>Description</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Created Date</th>
+                                        <th>Prepared Date</th>
+                                        <th>Prepared By</th>
+                                        <th>Approved Date</th>
+                                        <th>Approved By</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="label label-success">Approved</span></td>
+                                        <td>Interbank ATM</td>
+                                        <td>20200412</td>
+                                        <td>20200414</td>
+                                        <td>2020-04-15 10:29:39</td>
+                                        <td>2020-04-15 10:50:28</td>
+                                        <td>Retha Schoeman</td>
+                                        <td>2020-04-15 13:10:49</td>
+                                        <td>Lynn Strydom</td>
+                                        <td><a href="invoice-print.html" target="_blank" class="btn btn-default" style="height:22px; font-size:11px; padding-top:2px"><i class="fa fa-upload"></i> Select</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="label label-success">Approved</span></td>
+                                        <td>Interbank ATM</td>
+                                        <td>20200415</td>
+                                        <td>20200415</td>
+                                        <td>2020-04-16 10:07:24</td>
+                                        <td>2020-04-16 10:12:38</td>
+                                        <td>Retha Schoeman</td>
+                                        <td>2020-04-16 10:44:24</td>
+                                        <td>Lynn Strydom</td>
+                                        <td><a href="invoice-print.html" target="_blank" class="btn btn-default" style="height:22px; font-size:11px; padding-top:2px"><i class="fa fa-upload"></i> Select</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="label label-danger">Under Investigation</span></td>
+                                        <td>Interbank ATM</td>
+                                        <td>20200416</td>
+                                        <td>20200416</td>
+                                        <td>2020-04-17 10:22:11</td>
+                                        <td>2020-04-17 10:52:55</td>
+                                        <td>Retha Schoeman</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><a href="invoice-print.html" target="_blank" class="btn btn-default" style="height:22px; font-size:11px; padding-top:2px"><i class="fa fa-upload"></i> Select</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="label label-primary">Awaiting Approval</span></td>
+                                        <td>Interbank ATM</td>
+                                        <td>20200417</td>
+                                        <td>20200417</td>
+                                        <td>2020-04-20 10:20:01</td>
+                                        <td>2020-04-20 10:24:51</td>
+                                        <td>Retha Schoeman</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><a href="invoice-print.html" target="_blank" class="btn btn-default" style="height:22px; font-size:11px; padding-top:2px"><i class="fa fa-upload"></i> Select</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="label label-warning">In process</span></td>
+                                        <td>Interbank ATM</td>
+                                        <td>20200419</td>
+                                        <td>20200420</td>
+                                        <td>2020-04-21 10:32:08</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><a href="invoice-print.html" target="_blank" class="btn btn-default" style="height:22px; font-size:11px; padding-top:2px"><i class="fa fa-upload"></i> Select</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+    <!-- jQuery -->
+    <script src="../../plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4 -->
+    <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="../../dist/js/adminlte.min.js"></script>
+    <!-- AdminLTE for demo purposes -->
+    <script src="../../dist/js/demo.js"></script>
+</body>
+</html>

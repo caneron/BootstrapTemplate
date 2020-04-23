@@ -3,9 +3,8 @@
  * ----------
  */
 .skin-blue .main-header .navbar {
-  background-color: #17848a;
+    background-color: #17848a;
 }
-/**/
 .skin-blue .main-header .navbar .nav > li > a {
   color: #ffffff;
 }

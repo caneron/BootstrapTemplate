@@ -1,0 +1,617 @@
+﻿
+@page
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Recon - Albaraka Bank - Interbank ATM</title>
+</head>
+<body>
+    <link rel="stylesheet" href="~/admin-lte/css/AdminLTE.css" />
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <h1>
+            Albaraka Bank - Interbank ATM
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Albaraka Bank</a></li>
+            <li><a href="#">Available Recons</a></li>
+            <li class="active">Interbank ATM</li>
+        </ol>
+    </section>
+
+    <!-- Main Recon Layout -->
+    <section class="Recon">
+        <div class="ReconHeader">
+            <table style="width:100%;height:100%" border="0">
+                <tbody>
+                    <tr style="height:60px">
+                        <td style="width:100%" colspan="2" class="ReconHeader-MainTitle">Albaraka Bank</td>
+                    </tr>
+                    <tr style="height:60px">
+                        <td style="width:100%" colspan="2" class="ReconHeader-SubTitle">Albaraka Bank Interbank ATM Control</td>
+                    </tr>
+                    <tr>
+                        <td style="width:50%">
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="ReconHeader-FieldHeader" style="width:350px">Pastel General Ledger</td>
+                                        <td class="ReconHeader-FieldValue" style="width:150px">2158</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td style="width:50%"></td>
+                    </tr>
+                    <tr>
+                        <td style="width:50%">
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="ReconHeader-FieldHeader" style="width:350px">Midas General Ledger</td>
+                                        <td class="ReconHeader-FieldValue" style="width:150px">3706</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td style="width:50%"></td>
+                    </tr>
+                    <tr>
+                        <td style="width:50%">
+                            <table border="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="ReconHeader-FieldHeader" style="width:350px">Effective Date</td>
+                                        <td class="ReconHeader-FieldValue" style="width:150px">2020-04-15</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                        <td style="width:50%"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="ReconContent">
+            <table width="100%" style="color:#000000" cellpadding="3" cellpsacing="3" border="0">
+                <thead>
+                    <tr style="height:20px">
+                        <th style="width:300px">Description</th>
+                        <th style="width:100px"></th>
+                        <th style="width:100px">Date</th>
+                        <th style="width:100px; text-align:right"></th>
+                        <th style="width:100px; text-align:right">Amount</th>
+                        <th style="width:30px"></th>
+                        <th>Remarks</th>
+                        <th style="width:100px">Clearing Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr style="height:20px; background-color:#ffffff">
+                        <td style="width:300px">Pastel GL Balance</td>
+                        <td style="width:100px">2158-100</td>
+                        <td style="width:100px">2020-04-15</td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right">(39,412.25)</td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px">11105 Settlement : Authoriser</td>
+                        <td style="width:100px">Al Baraka</td>
+                        <td style="width:100px">2020-04-15</td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right">63,882.25</td>
+                        <td style="width:30px"></td>
+                        <td>General Ledger Settlement Jnl to be processed</td>
+                        <td style="width:100px">2020-04-16</td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px">11105 Settlement : Authoriser</td>
+                        <td style="width:100px">Al Baraka</td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right">-</td>
+                        <td style="width:30px"></td>
+                        <td>General Ledger Settlement Jnl to be processed</td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px">11105 Settlement : Authoriser</td>
+                        <td style="width:100px">Al Baraka</td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right">-</td>
+                        <td style="width:30px"></td>
+                        <td>General Ledger Settlement Jnl to be processed</td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px">11105 Settlement : Authoriser</td>
+                        <td style="width:100px">Al Baraka</td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right">-</td>
+                        <td style="width:30px"></td>
+                        <td>General Ledger Settlement Jnl to be processed</td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px">11105 Settlement : Terminal</td>
+                        <td style="width:100px">Al Baraka</td>
+                        <td style="width:100px">2020-04-15</td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right">(24,470.00)</td>
+                        <td style="width:30px"></td>
+                        <td>General Ledger Settlement Jnl to be processed</td>
+                        <td style="width:100px">2020-04-16</td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px">11105 Settlement : Terminal</td>
+                        <td style="width:100px">Al Baraka</td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right">-</td>
+                        <td style="width:30px"></td>
+                        <td>General Ledger Settlement Jnl to be processed</td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px">11105 Settlement : Terminal</td>
+                        <td style="width:100px">Al Baraka</td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right">-</td>
+                        <td style="width:30px"></td>
+                        <td>General Ledger Settlement Jnl to be processed</td>
+                        <td></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px">11105 Settlement : Terminal</td>
+                        <td style="width:100px">Al Baraka</td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right">-</td>
+                        <td style="width:30px"></td>
+                        <td>General Ledger Settlement Jnl to be processed</td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px">Difference</td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right;border-top: 1px solid #000000;border-bottom:1px double #000000">-</td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px">Following Day Amount Authoriser(-)</td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px">2020-04-15</td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right">-</td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px">Following Day Amount Authoriser(+)</td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px">2020-04-15</td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right">-</td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px">Following Day Amount Terminal(-)</td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px">2020-04-15</td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right">-</td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px">Following Day Amount Terminal(+)</td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px">2020-04-15</td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right">-</td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#1784a1; color:#ffffff">
+                        <td colspan="8">Outstanding Items</td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px">Inter Bank Settlement Difference</td>
+                        <td style="width:100px">Authoriser</td>
+                        <td style="width:100px">2020-04-15</td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right">-</td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px">Inter Bank Settlement Difference</td>
+                        <td style="width:100px">Terminal</td>
+                        <td style="width:100px">2020-04-15</td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right">-</td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:400px; text-decoration:underline">Details Inter Bank Settlement Difference (Bal Diff)</td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px">Difference: Sub Total</td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right;border-top: 1px solid #000000;border-bottom:1px double #000000">-</td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px">General Ledger Difference Inter Bank ATM</td>
+                        <td style="width:100px">Authoriser</td>
+                        <td style="width:100px">2020-04-15</td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right">-</td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px">General Ledger Difference Inter Bank ATM</td>
+                        <td style="width:100px">Terminal</td>
+                        <td style="width:100px">2020-04-15</td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right">-</td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px; text-decoration:underline">Details General Ledger Differences(GL Diff)</td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align: right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px">Difference: Sub Total</td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right;border-top: 1px solid #000000;border-bottom:1px double #000000">-</td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width:100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#1784a1; color:#ffffff">
+                        <td colspan="8">Outstanding Items</td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#1f3356; color:#ffffff;font-weight:bold">
+                        <td colspan="4">Difference</td>
+                        <td style="width:100px; text-align:right">-</td>
+                        <td colspan="3"></td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td colspan="8">
+                            <table>
+                                <tr style="height:20px">
+                                    <td style="width:200px">Prepared By</td>
+                                    <td style="width:300px">Retha Schoeman</td>
+                                    <td style="width:200px">Approved By</td>
+                                    <td style="width:300px">Lynn Strydom</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr style="height:20px">
+                        <td colspan="8">
+                            <table>
+                                <tr style="height:20px">
+                                    <td style="width:200px">Date Prepared</td>
+                                    <td style="width:300px">2020-04-16</td>
+                                    <td style="width:200px">Date Approved</td>
+                                    <td style="width:300px">2020-04-16</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr style="height:20px;background-color:#ffffff">
+                        <td style="width:300px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:100px; text-align:right"></td>
+                        <td style="width:30px"></td>
+                        <td></td>
+                        <td style="width: 100px"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row no-print" style="padding-left:10px">
+            <div class="col-xs-12">
+                <table cellspacing="5" cellpadding="5">
+                    <tr style="height:20px">
+                        <td><a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fa fa-print"></i> Print</a></td>
+                        <td><a href="invoice-print.html" target="_blank" class="btn btn-default"><i class="fa fa-download"></i> Generate PDF</a></td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

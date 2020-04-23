@@ -214,7 +214,8 @@ $(function () {
         //+ '</div>'
         
         
-    )
+   
+   //)
     var $skinsList = $('<ul />', { 'class': 'list-unstyled clearfix' })
 
     // Dark sidebar skins
@@ -322,7 +323,7 @@ $(function () {
    // $Settings.append($skinsList)
 
     //$tabPane.append($Settings)
-    $('#control-sidebar-home-tab').after($tabPane)
+   // $('#control-sidebar-home-tab').after($tabPane)
 
     setup()
 

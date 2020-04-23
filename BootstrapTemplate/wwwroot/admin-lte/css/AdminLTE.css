@@ -18,14 +18,12 @@ body {
   height: 100%;
 }
 body {
-    font-family: 'Open Sans', Arial !important;
+    font-family: Open Sans !important;
+    font-size: 12px !important;
     font-weight: 400;
-    font-size : 12px !important;
     overflow-x: hidden;
     overflow-y: auto;
 }
-
-/**/
 /* Layout */
 .wrapper {
   height: 100%;
@@ -161,7 +159,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Open Sans', Arial; /*'Source Sans Pro', sans-serif;*/
 }
 /* General Links */
 a {
@@ -284,7 +282,7 @@ a:focus {
 .main-header .logo {
     -webkit-transition: width 0.3s ease-in-out;
     -o-transition: width 0.3s ease-in-out;
-    transition: width .3s ease-in-out;
+    transition: width 0.3s ease-in-out;
     display: block;
     float: left;
     height: 50px;
@@ -297,13 +295,12 @@ a:focus {
     font-weight: 300;
     overflow: hidden;
 }
-    .main-header .logo .logo-lg {
-    display: block;
-    
-    }
-    .main-header .logo .logo-mini {
-    display: none;
-    }
+.main-header .logo .logo-lg {
+  display: block;
+}
+.main-header .logo .logo-mini {
+  display: none;
+}
 .main-header .navbar-brand {
   color: #fff;
 }
@@ -325,7 +322,7 @@ a:focus {
   float: right;
   background: transparent;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
   font-size: 12px;
   padding: 7px 5px;
   position: absolute;
@@ -454,7 +451,6 @@ a:focus {
   }
 }
 .sidebar {
-  padding-top : 50px;
   padding-bottom: 10px;
 }
 .sidebar-form input:focus {
@@ -602,14 +598,13 @@ a:focus {
   }
   .sidebar-mini.sidebar-collapse .main-header .logo {
     width: 50px;
-    display:none;
+    display: none;
   }
   .sidebar-mini.sidebar-collapse .main-header .logo > .logo-mini {
     display: block;
     margin-left: -15px;
     margin-right: -15px;
     font-size: 18px;
-
   }
   .sidebar-mini.sidebar-collapse .main-header .logo > .logo-lg {
     display: none;
@@ -695,7 +690,7 @@ a:focus {
 }
 .control-sidebar {
   position: absolute;
-  padding-top: 50px;
+  padding-top: 65px;
   z-index: 1010;
 }
 @media (max-width: 768px) {
@@ -2983,16 +2978,7 @@ table.text-center th {
     -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125);
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.125);
   }
-
 }
-/*@media (min-width: 768px) { changed to make sidebar toggle button work properly
-    .sidebar-mini.sidebar-collapse .main-header .logo>.logo-lg
-    {
-        display:none;
-    }
-}*/
-
-
 .modal-header {
   border-bottom-color: #f4f4f4;
 }
@@ -4990,3 +4976,153 @@ table.text-center th {
     white-space: normal !important;
   }
 }
+/*
+ * Page: Recon
+ * -------------
+ */
+.Recon {
+    position: relative;
+    background: #fff;
+    border: 0px solid #f4f4f4;
+    padding: 5px;
+    margin: 10px 15px 10px 15px;
+}
+
+.ReconHeader {
+    position: relative;
+    background: #1f3356;
+    border: 0px solid #000000;
+    padding: 10px 10px 10px 10px;
+    margin: -5px -5px;
+    color: #ffffff;
+}
+
+.ReconContent {
+    position: relative;
+    background: #efefef;
+    border: 0px solid #000000;
+    padding: 0px 0px 0px 0px;
+    margin: -5px -5px;
+    color: #ffffff;
+}
+
+.ReconHeader-MainTitle {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.ReconHeader-SubTitle {
+    font-size: 18px;
+}
+
+.ReconHeader-FieldHeader {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.ReconHeader-FieldValue {
+    font-size: 14px;
+}
+.Recon-title {
+    margin-top: 0;
+}
+
+.ClientMain {
+    position: relative;
+    background: #fff;
+    border: 0px solid #f4f4f4;
+    padding: 5px;
+    margin: 10px 15px 10px 15px;
+}
+
+.ClientMainHeader {
+    position: relative;
+    background: #1f3356;
+    border: 0px solid #000000;
+    padding: 10px 10px 10px 10px;
+    margin: -5px -5px;
+    color: #ffffff;
+}
+
+.ClientMainContent {
+    position: relative;
+    background: #efefef;
+    border: 0px solid #000000;
+    padding: 0px 0px 0px 0px;
+    margin: -5px -5px;
+    color: #ffffff;
+}
+
+.label {
+    display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    color: @label-color;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+    // Add hover effects, but only for links a&
+
+{
+    &:hover, &:focus
+
+{
+    color: @label-link-hover-color;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+}
+
+// Empty labels collapse automatically (not available in IE8)
+&:empty {
+    display: none;
+}
+
+// Quick fix for labels in buttons
+.btn & {
+    position: relative;
+    top: -1px;
+}
+
+}
+
+// Colors
+// Contextual variations (linked labels get darker on :hover)
+
+.label-default {
+    .label-variant(@label-default-bg);
+}
+
+.label-primary {
+    .label-variant(@label-primary-bg);
+}
+
+.label-success {
+    .label-variant(@label-success-bg);
+}
+
+.label-info {
+    .label-variant(@label-info-bg);
+}
+
+.label-warning {
+    .label-variant(@label-warning-bg);
+}
+
+.label-danger {
+    .label-variant(@label-danger-bg);
+}
+
+.navcrumb {
+    color: #444;
+    text-decoration: none;
+    display: inline-block;
+    list-style:none;
+    background-color:#F86E60 !important;
+    margin-bottom: 0px !important;
+}
+

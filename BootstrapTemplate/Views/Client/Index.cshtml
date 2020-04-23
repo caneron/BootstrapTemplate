@@ -1,60 +1,73 @@
 ﻿@model IEnumerable<BootstrapTemplate.Models.Client>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Client Management";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>Index</h1>
+<h6 style="padding-left:10px;padding-top:10px">Client Management</h6>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a style="padding-left:10px;padding-top:10px" asp-action="Create">Create New client</a>
 </p>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Name)
+                @Html.DisplayNameFor(model => model.rcl_Code)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Description)
+                @Html.DisplayNameFor(model => model.rcl_Description)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CreatedBy)
+                @Html.DisplayNameFor(model => model.rcl_Active)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CreatedDate)
+                @Html.DisplayNameFor(model => model.rcl_Created_By)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Active)
+                @Html.DisplayNameFor(model => model.rcl_Created_Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.rcl_Last_Modified_By)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.rcl_Last_Modified_Date)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedBy)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CreatedDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Active)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.rcl_Code)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.rcl_Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.rcl_Active)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.rcl_Created_By)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.rcl_Created_Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.rcl_Last_Modified_By)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.rcl_Last_Modified_Date)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                    @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

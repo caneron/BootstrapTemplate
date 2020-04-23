@@ -1,0 +1,92 @@
+﻿
+
+    <nav class="navbar navbar-static-top navbar-expand-md navbar-dark">
+       @* <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">@*<span class="sr-only">Toggle navigation</span></a>*@
+        <a asp-controller="Home" asp-action="Index" class="fa fa-home text-white" role="button"> </a>
+
+            <div class="container">
+                <ol class=" breadcrumb ">
+                 @*   <li class="breadcrumb-item">Home</li>*@
+                    @{
+                        List<BreadCrumb> navigation = new List<BreadCrumb>();
+                        // string route = ViewContext.RouteData.Values["Page"].ToString();
+                        string route = Context.Request.Path.ToString().Substring(1);
+                        string[] path = route.Split('/');
+                        foreach (string name in path)
+                        {
+                            string link = route.Substring(0,route.IndexOf(name)+name.Length);
+                            BreadCrumb crumb = new BreadCrumb() { Name = name, Action = link };
+                           // if (navigation.Contains(crumb))
+                          //  {
+                                navigation.Add(crumb);
+                          //  }
+
+                        }
+
+                        //   <li class="breadcrumb-item">crumb</li>
+                        ViewBag.navigation = navigation;
+                    }
+
+
+                    @foreach (BreadCrumb item in ViewBag.Navigation)
+                    {
+                        @if (item.Name != "/")
+                        {
+                            <li class="breadcrumb-item"><a href="#" >@item.Name</a></li>
+
+                        }
+                    }
+                </ol>
+                <div class="navbar-collapse collapse  flex-sm-row-reverse ">
+                    @*<partial name="_LoginPartial" />*@
+
+                    @*  <ul class="navbar-nav align-content-md-center">
+                        <!--"navbar-nav flex-grow-1-->
+                        <!--albaraka bank-->
+                        <li class="nav-item ">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Albaraka">Albaraka Bank</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="absa">Absa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="absa">African Bank</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="absa">Banco Sol</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="absa">BNP Paribas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="absa">Ithala Bank</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="absa">Grobank</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="absa">Sasfin Bank</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="absa"> State Bank of India </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="absa">uBank</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="absa">VBS Mutual Bank</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="absa">Wonga</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white   " asp-area="" asp-controller="Home" asp-action="absa">Bidvest Bank</a>
+                        </li>
+                    </ul>*@
+                </div>
+            </div>
+
+            <div class="nav navbar-custom-menu">
+                <a class="nav-link text-dark" href="#" data-toggle="control-sidebar"><i class="fa fa-gears " style="color:#ffff"></i></a>
+            </div>
+    </nav>
